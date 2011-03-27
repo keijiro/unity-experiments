@@ -11,3 +11,7 @@
 # GUISkin
 
 GUI Skinの自作例。スクリーンサイズによってスキンとフォントを切り替えます（２段階）。
+
+# PointLights
+
+Rendering Pathの切り替え実験。画面クリックによりForward RenderingとVertex Litを切り替えます。
