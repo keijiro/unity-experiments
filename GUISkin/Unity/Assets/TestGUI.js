@@ -13,7 +13,8 @@ function Update() {
 }
 
 function OnGUI() {
-	GUI.skin = (Screen.width < 480) ? skinSmall : skinLarge;
+	var size = Screen.width < Screen.height ? Screen.width : Screen.height;
+	GUI.skin = (size < 480) ? skinSmall : skinLarge;
 	if (scale < 0.03) {
 		ShowOpenButton();
 	} else {
@@ -42,15 +43,21 @@ private function ShowMenu() {
 	
 	var pivot = Vector2(0.5 * Screen.width, 0.5 * Screen.height);
 	var angle = 5.0 * Mathf.Sin(Time.time * 3.0);
-	var offset = sw * 0.05 * Mathf.Sin(Time.time * 2.7);
+	var offset = sw * 0.02 * Mathf.Sin(Time.time * 2.7);
     GUIUtility.RotateAroundPivot(angle, pivot);
     GUIUtility.ScaleAroundPivot(Vector2(scale, scale), pivot);
     
-    var ww = 0.8 * sw;
-    var ox = 0.1 * sw;
-    var oy = 0.5 * (sh - ww) + offset;
+    if (sh > sw) {
+        var ww = 0.8 * sw;
+        var ox = 0.1 * sw;
+        var oy = 0.5 * (sh - ww);
+    } else {
+        ww = 0.8 * sh;
+        ox = 0.5 * (sw - ww);
+        oy = 0.1 * sw;
+    }
 	
-	GUILayout.BeginArea(Rect(ox, oy, ww, ww), GUI.skin.box);
+	GUILayout.BeginArea(Rect(ox, oy + offset, ww, ww), GUI.skin.box);
 	GUILayout.BeginVertical();
 	if (GUILayout.Button("START")) open = false;
 	if (GUILayout.Button("TUTORIAL")) open = false;
