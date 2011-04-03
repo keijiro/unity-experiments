@@ -67,7 +67,7 @@
 // Settings kMillisecondsPerFrameToProcessEvents to 0 will make main loop to wait for OS to pump all events.
 // Meaningful only if EVENT_PUMP_BASED_LOOP method is used.
 
-#define USE_OPENGLES20_IF_AVAILABLE 1
+#define USE_OPENGLES20_IF_AVAILABLE 0
 #define USE_DISPLAY_LINK_IF_AVAILABLE 0
 #define MSAA_DEFAULT_SAMPLE_COUNT 0
 
@@ -92,7 +92,7 @@
 #endif
 
 #define kFPS									30.0
-#define kAccelerometerFrequency					60.0
+#define kAccelerometerFrequency					10.0
 
 
 // --- Unity --------------------------------------------------------------------

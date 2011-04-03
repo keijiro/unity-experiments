@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F0B6D57134819A40015B31F /* CloseButton.001.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F0B6D55134819A40015B31F /* CloseButton.001.png */; };
+		0F0B6D58134819A40015B31F /* CloseButton.002.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F0B6D56134819A40015B31F /* CloseButton.002.png */; };
 		0FBBA45B1347515D00E88BC2 /* OverlayWindow.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0FBBA4571347515D00E88BC2 /* OverlayWindow.mm */; };
 		0FBBA461134751DD00E88BC2 /* OverlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FBBA45F134751DD00E88BC2 /* OverlayViewController.m */; };
 		0FBBA462134751DD00E88BC2 /* OverlayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FBBA460134751DD00E88BC2 /* OverlayViewController.xib */; };
@@ -81,6 +83,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0F0B6D55134819A40015B31F /* CloseButton.001.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CloseButton.001.png; sourceTree = "<group>"; };
+		0F0B6D56134819A40015B31F /* CloseButton.002.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CloseButton.002.png; sourceTree = "<group>"; };
 		0FBBA4571347515D00E88BC2 /* OverlayWindow.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OverlayWindow.mm; sourceTree = "<group>"; };
 		0FBBA45E134751DD00E88BC2 /* OverlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OverlayViewController.h; sourceTree = "<group>"; };
 		0FBBA45F134751DD00E88BC2 /* OverlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OverlayViewController.m; sourceTree = "<group>"; };
@@ -112,10 +116,10 @@
 		D82DCFBC0E8000A5005D6AD8 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MainWindow.xib; path = Classes/MainWindow.xib; sourceTree = SOURCE_ROOT; };
 		D82DCFBD0E8000A5005D6AD8 /* RegisterClasses.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RegisterClasses.cpp; path = Classes/RegisterClasses.cpp; sourceTree = SOURCE_ROOT; };
 		D82DCFBE0E8000A5005D6AD8 /* RegisterClasses.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RegisterClasses.h; path = Classes/RegisterClasses.h; sourceTree = SOURCE_ROOT; };
-		D8A1C7000E80637F100160D4 /* Assembly-CSharp-firstpass.dll.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.asm"; name = "Assembly-CSharp-firstpass.dll.s"; path = "Libraries/Assembly-CSharp-firstpass.dll.s"; sourceTree = SOURCE_ROOT; };
-		D8A1C7001E80637F100160D4 /* Assembly-UnityScript.dll.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.asm"; name = "Assembly-UnityScript.dll.s"; path = "Libraries/Assembly-UnityScript.dll.s"; sourceTree = SOURCE_ROOT; };
-		D8A1C7002E80637F100160D4 /* UnityEngine.dll.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.asm"; name = "UnityEngine.dll.s"; path = "Libraries/UnityEngine.dll.s"; sourceTree = SOURCE_ROOT; };
-		D8A1C7003E80637F100160D4 /* mscorlib.dll.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.asm"; name = "mscorlib.dll.s"; path = "Libraries/mscorlib.dll.s"; sourceTree = SOURCE_ROOT; };
+		D8A1C7000E80637F100160D4 /* Assembly-CSharp-firstpass.dll.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; name = "Assembly-CSharp-firstpass.dll.s"; path = "Libraries/Assembly-CSharp-firstpass.dll.s"; sourceTree = SOURCE_ROOT; };
+		D8A1C7001E80637F100160D4 /* Assembly-UnityScript.dll.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; name = "Assembly-UnityScript.dll.s"; path = "Libraries/Assembly-UnityScript.dll.s"; sourceTree = SOURCE_ROOT; };
+		D8A1C7002E80637F100160D4 /* UnityEngine.dll.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; name = UnityEngine.dll.s; path = Libraries/UnityEngine.dll.s; sourceTree = SOURCE_ROOT; };
+		D8A1C7003E80637F100160D4 /* mscorlib.dll.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; name = mscorlib.dll.s; path = Libraries/mscorlib.dll.s; sourceTree = SOURCE_ROOT; };
 		D8A1C7240E80637F000160D3 /* RegisterMonoModules.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RegisterMonoModules.cpp; path = Libraries/RegisterMonoModules.cpp; sourceTree = SOURCE_ROOT; };
 		D8A1C7250E80637F000160D3 /* RegisterMonoModules.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RegisterMonoModules.h; path = Libraries/RegisterMonoModules.h; sourceTree = SOURCE_ROOT; };
 		D8A1C72A0E8063A1000160D3 /* libiPhone-lib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libiPhone-lib.a"; path = "Libraries/libiPhone-lib.a"; sourceTree = SOURCE_ROOT; };
@@ -166,6 +170,8 @@
 		0FBBA4561347515D00E88BC2 /* Plugins */ = {
 			isa = PBXGroup;
 			children = (
+				0F0B6D55134819A40015B31F /* CloseButton.001.png */,
+				0F0B6D56134819A40015B31F /* CloseButton.002.png */,
 				0FBBA4571347515D00E88BC2 /* OverlayWindow.mm */,
 				0FBBA45E134751DD00E88BC2 /* OverlayViewController.h */,
 				0FBBA45F134751DD00E88BC2 /* OverlayViewController.m */,
@@ -326,6 +332,8 @@
 				86BF298511E7680B0022A4F9 /* Default@2x.png in Resources */,
 				5671AA9E1212904700ADB508 /* Icon@2x.png in Resources */,
 				0FBBA462134751DD00E88BC2 /* OverlayViewController.xib in Resources */,
+				0F0B6D57134819A40015B31F /* CloseButton.001.png in Resources */,
+				0F0B6D58134819A40015B31F /* CloseButton.002.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,7 +406,6 @@
 				567B625D114A9F340000AA1F /* iPhone_target2AppDelegate.m in Sources */,
 				567B625E114A9F340000AA1F /* main.mm in Sources */,
 				567B625F114A9F340000AA1F /* RegisterClasses.cpp in Sources */,
-				567B6200014A9F340000AA1F /* Assembly-CSharp-firstpass.dll.s in Sources */,
 				567B6261114A9F340000AA1F /* RegisterMonoModules.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -427,7 +434,7 @@
 				);
 				PRODUCT_NAME = UIKitOverlay;
 				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -451,7 +458,7 @@
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = UIKitOverlay;
 				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -477,7 +484,7 @@
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = UIKitOverlay;
 				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -504,7 +511,7 @@
 				);
 				PRODUCT_NAME = UIKitOverlay;
 				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
