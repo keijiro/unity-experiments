@@ -13,23 +13,12 @@
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
     return self;
 }
 
 - (void)dealloc
 {
     [super dealloc];
-}
-
-- (void)didReceiveMemoryWarning
-{
-    // Releases the view if it doesn't have a superview.
-    [super didReceiveMemoryWarning];
-    
-    // Release any cached data, images, etc that aren't in use.
 }
 
 #pragma mark - View lifecycle
@@ -44,31 +33,31 @@
     self.view.hidden = YES;
 }
 
-- (void)viewDidUnload
-{
-    [super viewDidUnload];
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
-}
-
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
-    // Return YES for supported orientations
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
-- (void)showWithText:(NSString *)text {
+- (void)showWithText:(NSString *)text
+{
+    // テキストの設定。
     self.textView.text = text;
+    // ビューを画面外に配置する。
+    float bottom = self.view.superview.frame.size.height;
+    self.view.center = CGPointMake(self.view.center.x,bottom + self.view.frame.size.height / 2);
     self.view.hidden = NO;
-    self.view.alpha = 0.0;
+    // 下からスライドするアニメーション。
     [UIView animateWithDuration:0.4 animations:^{
-        self.view.alpha = 1.0;
+        self.view.center = CGPointMake(self.view.center.x, bottom - self.view.frame.size.height / 2);
     }];
 }
 
-- (IBAction)close {
+- (IBAction)close
+{
+    // 画面下へスライドするアニメーション。終了時に非表示化する。
+    float bottom = self.view.superview.frame.size.height;
     [UIView animateWithDuration:0.4 animations:^{
-        self.view.alpha = 0.0;
+        self.view.center = CGPointMake(self.view.center.x, bottom + self.view.frame.size.height / 2);
     } completion:^(BOOL finished){
         self.view.hidden = YES;
     }];

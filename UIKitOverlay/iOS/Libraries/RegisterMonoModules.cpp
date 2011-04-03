@@ -367,6 +367,10 @@ void RegisterAllStrippedInternalCalls ()
 	Register_UnityEngine_IDList_ResetIdx ();
 	void Register_UnityEngine_Input_GetButtonDown ();
 	Register_UnityEngine_Input_GetButtonDown ();
+	void Register_UnityEngine_Input_GetTouch ();
+	Register_UnityEngine_Input_GetTouch ();
+	void Register_UnityEngine_Input_get_touchCount ();
+	Register_UnityEngine_Input_get_touchCount ();
 	void Register_UnityEngine_iPhoneKeyboard_Destroy ();
 	Register_UnityEngine_iPhoneKeyboard_Destroy ();
 	void Register_UnityEngine_iPhoneKeyboard_iPhoneKeyboard_InternalConstructorHelper ();
