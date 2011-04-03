@@ -1,3 +1,4 @@
+#import <UIKit/UIView.h>
 #import <QuartzCore/QuartzCore.h>
 #import "OverlayViewController.h"
 
@@ -56,13 +57,21 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
-- (IBAction)close {
-    self.view.hidden = YES;
-}
-
 - (void)showWithText:(NSString *)text {
     self.textView.text = text;
     self.view.hidden = NO;
+    self.view.alpha = 0.0;
+    [UIView animateWithDuration:0.4 animations:^{
+        self.view.alpha = 1.0;
+    }];
+}
+
+- (IBAction)close {
+    [UIView animateWithDuration:0.4 animations:^{
+        self.view.alpha = 0.0;
+    } completion:^(BOOL finished){
+        self.view.hidden = YES;
+    }];
 }
 
 @end
