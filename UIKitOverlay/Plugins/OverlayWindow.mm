@@ -11,7 +11,6 @@ static NSString* CreateNSString (const char* string) {
 extern "C" void _OverlayWindowInstall() {
     overlayViewController = [[OverlayViewController alloc] init];
     [[UIApplication sharedApplication].keyWindow addSubview:overlayViewController.view];
-    overlayViewController.view.hidden = YES;
 }
 
 extern "C" void _OverlayWindowUninstall() {
@@ -20,14 +19,13 @@ extern "C" void _OverlayWindowUninstall() {
 }
 
 extern "C" void _OverlayWindowShow(const char *text) {
-    overlayViewController.textView.text = CreateNSString(text);
-    overlayViewController.view.hidden = NO;
+    [overlayViewController showWithText:CreateNSString(text)];
 }
 
 extern "C" void _OverlayWindowHide() {
-    overlayViewController.view.hidden = YES;
+    [overlayViewController close];
 }
 
 extern "C" BOOL _OverlayWindowUpdate() {
-    return !overlayViewController.view.hidden;
+    return overlayViewController.visible;
 }

@@ -5,6 +5,10 @@
 
 @synthesize textView;
 
+- (BOOL)visible {
+    return !self.view.hidden;
+}
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -35,6 +39,8 @@
     // テキストビューの角を丸める。
     self.textView.layer.cornerRadius = 5;
     self.textView.clipsToBounds = YES;
+    // 非表示状態で始める。
+    self.view.hidden = YES;
 }
 
 - (void)viewDidUnload
@@ -52,6 +58,11 @@
 
 - (IBAction)close {
     self.view.hidden = YES;
+}
+
+- (void)showWithText:(NSString *)text {
+    self.textView.text = text;
+    self.view.hidden = NO;
 }
 
 @end
